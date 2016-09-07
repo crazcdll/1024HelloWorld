@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Swift</key>
+	<string>import Foundation
+
+print(&quot;Hello, World!&quot;)</string>
+	<key>Objective-C</key>
+	<string>#import &lt;Foundation/Foundation.h&gt;
+
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+
+        NSLog(@&quot;Hello, World!&quot;);
+
+    }
+    return 0;
+}</string>
+	<key>Java</key>
+	<string>public class HelloWorld {
+
+    public static void main(String[] args) {
+        // Prints &quot;Hello, World&quot; to the terminal window.
+        System.out.println(&quot;Hello, World&quot;);
+    }
+
+}</string>
+	<key>C</key>
+	<string>#include&lt;stdio.h&gt;
+
+main()
+{
+    printf(&quot;Hello World&quot;);
+
+}</string>
+	<key>C++</key>
+	<string>#include &lt;iostream&gt;
+using namespace std;
+
+int main(int argc, char * argv[])
+{
+    cout &lt;&lt; &quot;Hello, World!&quot; &lt;&lt; endl;
+}</string>
+	<key>C#</key>
+	<string>using System;
+namespace HelloWorld
+{
+    class Hello 
+    {
+        static void Main() 
+        {
+            Console.WriteLine(&quot;Hello World!&quot;);
+
+            // Keep the console window open in debug mode.
+            Console.WriteLine(&quot;Press any key to exit.&quot;);
+            Console.ReadKey();
+        }
+ </string>
+	<key>Python</key>
+	<string>print &apos;Hello World&apos;</string>
+	<key>PHP</key>
+	<string>&lt;html&gt;
+ &lt;head&gt;
+  &lt;title&gt;PHP 测试&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;?php echo &apos;&lt;p&gt;Hello World&lt;/p&gt;&apos;; ?&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</string>
+	<key>JavaScript</key>
+	<string>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;p&gt;Header...&lt;/p&gt;
+  &lt;script&gt;
+    alert(&apos;Hello, World!&apos;)
+  &lt;/script&gt;
+  &lt;p&gt;...Footer&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</string>
+	<key>Visual Basic .NET</key>
+	<string>Public Class Form1
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        MessageBox.Show(&quot;Hello World&quot;, &quot;Message Box Title&quot;)
+    End Sub
+
+End Class</string>
+	<key>Perl</key>
+	<string>print &quot;Hello World\n&quot;;</string>
+	<key>Assembly language</key>
+	<string>section	.text
+   global_start     ;must be declared for linker (ld)
+	
+_start:	            ;tells linker entry point
+   mov	edx,len     ;message length
+   mov	ecx,msg     ;message to write
+   mov	ebx,1       ;file descriptor (stdout)
+   mov	eax,4       ;system call number (sys_write)
+   int	0x80        ;call kernel
+	
+   mov	eax,1       ;system call number (sys_exit)
+   int	0x80        ;call kernel
+
+section	.data
+msg db &apos;Hello, world!&apos;, 0xa  ;string to be printed
+len equ $ - msg     ;length of the string</string>
+	<key>Delphi</key>
+	<string>program HelloWorld;
+begin
+  Writeln(&apos;Hello, world!&apos;);
+end.</string>
+	<key>Ruby</key>
+	<string>puts &apos;Hello world&apos;</string>
+	<key>Visual Basic</key>
+	<string>Module Hello
+  Sub Main()
+      MsgBox(&quot;Hello, World!&quot;) &apos; Display message on computer screen.
+  End Sub 
+End Module</string>
+	<key>R</key>
+	<string>&gt; myString &lt;- &quot;Hello, World!&quot;
+&gt; print ( myString)</string>
+	<key>MATLAB</key>
+	<string>function HelloWorld()
+disp(&apos;Hello,World!&apos;);
+end</string>
+	<key>PL/SQL</key>
+	<string>DECLARE
+   message  varchar2(20):= &apos;Hello, World!&apos;;
+BEGIN
+   dbms_output.put_line(message);
+END;</string>
+	<key>Go</key>
+	<string>package main
+import &quot;fmt&quot;
+func main() {
+    fmt.Println(&quot;hello world&quot;)
+}</string>
+	<key>HTML</key>
+	<string>&lt;html&gt;
+&lt;header&gt;&lt;title&gt;This is title&lt;/title&gt;&lt;/header&gt;
+&lt;body&gt;
+Hello world
+&lt;/body&gt;
+&lt;/html&gt;</string>
+	<key>Pascal</key>
+	<string>program Hello;
+begin
+  writeln (&apos;Hello, world.&apos;)
+end.</string>
+	<key>Fortran</key>
+	<string>program hello
+    print *, &quot;Hello World!&quot;
+end program hello</string>
+	<key>Rust</key>
+	<string>fn main() {
+    println!(&quot;Hello World!&quot;);
+}</string>
+	<key>Haskell</key>
+	<string>Prelude&gt; putStrLn &quot;Hello World&quot;</string>
+	<key>Scala</key>
+	<string>object HelloWorld {
+  def main(args: Array[String]): Unit = {
+    println(&quot;Hello, world!&quot;)
+  }
+}</string>
+</dict>
+</plist>
